@@ -1,0 +1,230 @@
+body, html {
+    height: 100%;
+    background: #F8F8F8 !important;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-overlay {
+        top: 0;
+        right: 0;
+        position: fixed !important;
+        z-index: 100;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .header-overlay {
+        display: none;
+    }
+}
+
+.sector-red {
+    background: #AB2622;
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+    margin-top: -80px !important;
+    margin-right: -70px !important;
+}
+
+.menu {
+    color: #FACB48;
+    padding: 4px 2px;
+    position: absolute;
+    top: 12px;
+    left: 30px;
+}
+
+.main-content {
+    min-height: 100%;
+}
+
+.image-rounded {
+    border-radius: 50%;
+}
+
+.heading-top-padding {
+    padding-top: 1em;
+}
+
+.stack-item {
+    object-fit: contain;
+    object-position: center;
+}
+
+#carousel {
+    height: 540px;
+    width: 300px;
+}
+
+.fa {
+    color: grey;
+    font-size: 36px !important;
+}
+
+.fa:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #FACB48 !important;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FACB48 !important;
+}
+
+@media only screen and (min-width: 600px) {
+    .main-content {
+        height: auto;
+    }
+}
+
+.scroll-inside {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.scroll-inside::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-inside {
+    -ms-overflow-style: none;
+}
+
+@media only screen and (min-width: 500px) {
+    .project-description {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .project-description {
+        font-size: 32px;
+    }
+}
+
+.btn-gold {
+    color: #AB2622;
+    background: #FACB48;
+}
+
+.desktop-main-section {
+    background: #F8F8F8 !important;
+}
+
+@media (max-width: 992px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 60px;
+        background: #F8F8F8;
+        bottom: 0;
+        right: -100%;
+        transition: all 0.2s ease;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 60px;
+        bottom: 0;
+        background: #F8F8F8;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 25%;
+        transition: right 1s ease;
+    }
+
+    .nav-link {
+        font-size: 32px;
+    }
+}
+
+.stack-image {
+    width: 180px;
+}
+
+.stack-header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 576px) {
+    .stack-image {
+        width: 400px;
+    }
+
+    .stack-header {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .stack-image {
+        width: 400px;
+    }
+
+    .stack-header {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .stack-image {
+        width: 600px;
+    }
+
+    .stack-header {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .custom-form {
+        min-width: 500px;
+    }
+    .custom-invisible {
+        opacity: 0;
+        -webkit-transform: scale(0.9);
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -o-transform: scale(0.9);
+        transform: scale(0.9);
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+    }
+
+    .custom-visible {
+        visibility: visible !important;
+        opacity: 1 !important;
+        -webkit-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -o-transform: none !important;
+        transform: none !important;
+    }
+
+}

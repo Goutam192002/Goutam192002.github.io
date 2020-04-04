@@ -19,14 +19,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cmp.osano.com/Azyw1tRvAig9h33u9/3ff29a03-4673-453d-9c7d-556bbf175bdf/osano.js"></script>
 </head>
-<body class="container-fluid" data-spy="scroll" data-target="#navbar">
+<body class="container-fluid" data-spy="scroll" data-target="#navbar" id="top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background: #F8F8F8 !important;">
         <a class="navbar-brand" href="#">
             <img src="assets/goutam-logo-512px.png" height="48">
         </a>
-        <div class="header-overlay">
+        <div class="header-overlay"  data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <div class="sector-red"></div>
-            <img src="assets/menu.png" class="menu" alt="menu-button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assets/menu.png" class="menu" alt="menu-button">
         </div>
         <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
             <img src="assets/menu.png" class="menu" alt="menu-button">
@@ -34,7 +34,7 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav my-2 ml-auto mt-2 mt-lg-0">
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarToggler">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="#top">Home <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li class="nav-item" data-toggle="collapse" data-target="#navbarToggler">

@@ -31,7 +31,7 @@ $(document).ready(function () {
         .setClassToggle("#mobile-6", "custom-visible")
         .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#pricing", duration: 700, offset: -25})
+    new ScrollMagic.Scene({triggerElement: "#pricing", duration: "150%", offset: -25})
         .setClassToggle("#pricing", "custom-visible")
         .addTo(controller);
 

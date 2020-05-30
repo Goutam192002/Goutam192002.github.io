@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    new Typewriter('#role-text', {
+        strings: ['Developer', 'Designer'],
+        autoStart: true,
+        loop: true
+    });
     const controller = new ScrollMagic.Controller();
 
     const tween = new TimelineMax()
@@ -7,28 +12,8 @@ $(document).ready(function () {
         .add(TweenMax.to("#form-subtitle", 1, { className: "+=animated-subtitle"}), 0)
         .add(TweenMax.to("#contact-form", 1, {className: "+=custom-form"}), 0);
 
-    new ScrollMagic.Scene({triggerElement: "#mobile-1", duration: 700, offset: -25})
-        .setClassToggle("#mobile-1", "custom-visible")
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#mobile-2", duration: 700, offset: -25})
-        .setClassToggle("#mobile-2", "custom-visible")
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#mobile-3", duration: 700, offset: -25})
-        .setClassToggle("#mobile-3", "custom-visible")
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#mobile-4", duration: 700, offset: -25})
-        .setClassToggle("#mobile-4", "custom-visible")
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#mobile-5", duration: 700, offset: -25})
-        .setClassToggle("#mobile-5", "custom-visible")
-        .addTo(controller);
-
-    new ScrollMagic.Scene({triggerElement: "#mobile-6", duration: 700, offset: -25})
-        .setClassToggle("#mobile-6", "custom-visible")
+    new ScrollMagic.Scene({triggerElement: "#tech-stack", duration: "150%", offset: -25})
+        .setClassToggle("#tech-stack", "custom-visible")
         .addTo(controller);
 
     new ScrollMagic.Scene({triggerElement: "#pricing", duration: "150%", offset: -25})

@@ -8,16 +8,27 @@ body {
     position: relative;
 }
 
+#home {
+    margin-top: 60px;
+}
+
 #role-text {
     color: #AB2622;
 }
 
+#cta-button {
+    width: 10rem;
+    background-color: #FACB48;
+    color: #AB2622;
+    border-radius: 2.5rem;
+}
+
 h1 {
-    font-size: 4em !important;
+    font-size: 3.8em !important;
 }
 
 h2 {
-    font-size: 2.4em !important;
+    font-size: 2.1em !important;
 }
 @media only screen and (max-width: 600px) {
     .header-overlay {
@@ -52,7 +63,8 @@ h2 {
 }
 
 .main-content {
-    min-height: 100% !important;
+    min-height: 100vh !important;
+    margin-bottom: 48px;
 }
 
 .image-rounded {
@@ -140,6 +152,10 @@ h2 {
     background: #F8F8F8 !important;
 }
 
+.custom-form {
+    min-width: 240px;
+}
+
 @media (max-width: 992px) {
 
     .navbar-collapse.collapsing .navbar-nav {
@@ -172,7 +188,7 @@ h2 {
 }
 
 .stack-image {
-    width: 180px;
+    width: 280px;
 }
 
 .stack-header {

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
-    <!-- <script src="https://cmp.osano.com/Azyw1tRvAig9h33u9/3ff29a03-4673-453d-9c7d-556bbf175bdf/osano.js"></script> -->
+    <script src="https://cmp.osano.com/Azyw1tRvAig9h33u9/3ff29a03-4673-453d-9c7d-556bbf175bdf/osano.js"></script>
 </head>
 <body class="container-fluid" data-spy="scroll" data-target="#navbar" id="top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background: #F8F8F8 !important;">
@@ -50,100 +50,63 @@
             </ul>
         </div>
     </nav>
-    <div class="container main-content desktop-main-section custom-invisible" id="home">
-        <div class="row justify-content-center align-items-center" style="height: 100vh">
-            <div class="col-sm-6">
+    <div class="container main-content desktop-main-section" id="home">
+        <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 60px)">
+            <div class="col-sm-6 align-items-center" style="height: 100vh; display: flex">
                 <div class="d-flex flex-column about-item-section justify-content-around" id="home-sub-1" style="height: 250px;">
                     <h1>Hi! It's Goutam</h1>
                     <h2>I am a <span id="role-text"></span></h2>
+                    <button class="btn" id="cta-button">Let's Talk</button>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 align-items-center justify-content-center" style="height: 100vh; display: flex">
                 <img src="assets/goutam-pic-min.png" width="250" height="250" class="image-rounded mr-5" alt="goutam-image">
             </div>
         </div>
     </div>
-    <div class="d-flex flex-column justify-content-center align-items-center text-center main-content desktop-main-section custom-invisible" id="tech-stack" style="width: 100%">
+    <div class="container text-center main-content desktop-main-section" id="tech-stack" style="height: 100vh">
         <p class="stack-header heading-top-padding mb-5">My Toolset</p>
         <img src="./assets/stack-collage-min.png" class="stack-image" id="stack-image">
     </div>
-    <div class="d-flex flex-column justify-content-around main-content align-items-center desktop-main-section custom-invisible" id="pricing">
+    <div class="container d-flex flex-column justify-content-around main-content align-items-center desktop-main-section" id="pricing">
         <div class="d-flex flex-column align-items-center">
-            <p style="font-size: 2.8em" class="mb-1">price ≠ ƒ(time)</p>
-            <p style="font-size: 2.8em" class="mb-5">price = ƒ(value) </p>
+            <p style="font-size: 2.1em" class="mb-1">price ≠ ƒ(time)</p>
+            <p style="font-size: 2.1em" class="mb-5">price = ƒ(value) </p>
             <p style="font-size: 1.2em">I believe that a project should be priced depending on the value it adds to clients.</p>
         </div>
-        <h3 class="mb-4"><u>Offerings</u></h3>
-        <div class="d-none d-sm-flex flex-column container">
-            <div class="mb-2 row justify-content-center align-items-center" style="width: 100%">
-                <img src="./assets/website-development.png" width="300" class="mr-5" style="object-fit: contain; object-position: center">
-                <div class="col-4">
-                    <h5>Website Development</h5>
-                    <p>Offering websites starting from 50 USD.<br>
-                        - additional charges for designs.<br>
-                        - 1 month free technical support/assistance.<br>
-                        - assured delivery within 1 week.</p>
-                </div>
-            </div>
-            <div class="mb-2 row justify-content-center align-items-center" style="width: 100%">
-                <div class="col-4">
-                    <h5>WebApp Development</h5>
-                    <p>Offering webapps starting from 500 USD.<br>
-                        - Choose from MEAN/MERN/Django.<br>
-                        - Fully scalable webapps built using CI/CD tools.<br>
-                        - assured MVP delivery within 2 weeks.</p>
-                </div>
-                <img src="./assets/webapps.png" width="300" class="mr-5" style="object-fit: contain; object-position: center">
-            </div>
-            <div class="mb-5 row justify-content-center align-items-center" style="width: 100%">
-                <img src="./assets/ui-ux-design-min.png" width="300" class="mr-5" style="object-fit: contain; object-position: center">
-                <div class="col-4">
-                    <h5>UI/UX Design</h5>
-                    <p>Offering UI/UX design prototypes starting from 50 USD.<br>
-                        - Prototype will be made available in all three formats
-                        (i.e Sketch/Figma/Adobe XD)<br>
-                        - upto 3 free design revisions.<br>
-                        - Assured delivery within 1 week.</p>
-                </div>
-            </div>
-        </div>
-        <div id="carousel" class="d-block d-sm-none carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="card">
-                        <img src="./assets/website-development.png" style="width: 100%; height: 100%; object-fit: contain; object-position: center">
-                        <div class="d-flex flex-column align-items-center">
+        <h3 class="mb-4">Offerings</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 mb-4">
+                    <div class="d-flex flex-column justify-content-between" style="height: 360px">
+                        <img src="./assets/website-development.png" height="180" class="d-flex" style="object-fit: contain; object-position: center">
+                        <div class="d-flex flex-column">
                             <h5>Website Development</h5>
-                            <p style="padding: 8px 16px; text-decoration: none !important;">Offering websites starting from 50 USD.<br>
+                            <p>Offering websites starting from 50 USD.<br>
                                 - additional charges for designs.<br>
                                 - 1 month free technical support/assistance.<br>
                                 - assured delivery within 1 week.</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="./assets/webapps.png" style="width: 100%; height: 100%; object-fit: contain; object-position: center">
-                        <div class="d-flex flex-column align-items-center">
+                <div class="col-sm-4 mb-4">
+                    <div class="d-flex flex-column justify-content-between" style="height: 360px">
+                        <img src="./assets/webapps.png" height="180" class="d-flex" style="object-fit: contain; object-position: center">
+                        <div class="d-flex flex-column">
                             <h5>WebApp Development</h5>
-                            <p style="padding: 8px 16px; text-decoration: none !important;">Offering webapps starting from 500 USD.<br>
+                            <p>Offering webapps starting from 500 USD.<br>
                                 - Choose from MEAN/MERN/Django.<br>
                                 - Fully scalable webapps built using CI/CD tools.<br>
                                 - assured MVP delivery within 2 weeks.</p>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <img src="./assets/ui-ux-design.webp" style="width: 100%; height: 100%; object-fit: contain; object-position: center">
-                        <div class="d-flex flex-column align-items-center">
+                <div class="col-sm-4 mb-4">
+                    <div class="d-flex flex-column justify-content-between" style="height: 360px">
+                        <img src="./assets/ui-ux-design-min.png" height="180" class="d-flex" style="object-fit: contain; object-position: center">
+                        <div class="d-flex flex-column">
                             <h5>UI/UX Design</h5>
-                            <p style="padding: 8px 16px; text-decoration: none !important;">Offering UI/UX design prototypes starting from 50 USD.<br>
+                            <p>Offering UI/UX design prototypes starting from 50 USD.<br>
                                 - Prototype will be made available in all three formats
                                 (i.e Sketch/Figma/Adobe XD)<br>
                                 - upto 3 free design revisions.<br>
@@ -152,14 +115,6 @@
                     </div>
                 </div>
             </div>
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <span class="icon-prev" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <span class="icon-next" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
     </div>
     <div class="d-flex flex-column main-content justify-content-between align-items-center desktop-main-section custom-invisible" id="contact-me">

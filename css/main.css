@@ -13,22 +13,25 @@ body {
 }
 
 #role-text {
-    color: #AB2622;
+    color: black;
 }
 
 #cta-button {
     width: 10rem;
-    background-color: #FACB48;
-    color: #AB2622;
-    border-radius: 2.5rem;
+    font-size: 1.2em;
+    color: white;
+    background: black;
+    border-radius: 0;
 }
 
 h1 {
     font-size: 3.8em !important;
+    color: rgba(0, 0, 0, 0.70) !important;
 }
 
 h2 {
     font-size: 2.1em !important;
+    color: rgba(0, 0, 0, 0.70) !important;
 }
 @media only screen and (max-width: 600px) {
     .header-overlay {
@@ -55,11 +58,10 @@ h2 {
 }
 
 .menu {
-    color: #FACB48;
-    padding: 4px 2px;
-    position: absolute;
-    top: 12px;
-    left: 30px;
+    position: fixed;
+    top: 18px;
+    right: 15px;
+    height: 32px;
 }
 
 .main-content {
@@ -109,7 +111,7 @@ h2 {
 }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #FACB48 !important;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
@@ -143,9 +145,12 @@ h2 {
     }
 }
 
-.btn-gold {
-    color: #AB2622;
-    background: #FACB48;
+.btn-black {
+    color: white;
+    background: black;
+    border-radius: 0 !important;
+    height: 3.2rem;
+    font-size: 1.2em;
 }
 
 .desktop-main-section {

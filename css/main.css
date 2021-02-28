@@ -1,7 +1,13 @@
 body, html {
     height: 100%;
-    background: #F8F8F8 !important;
+    font-family: 'Poppins', sans-serif !important;
+    background: #303030 !important;
     scroll-behavior: smooth;
+    color: white !important;
+}
+
+p, a {
+    color: white !important;
 }
 
 body {
@@ -13,27 +19,28 @@ body {
 }
 
 #role-text {
-    color: black;
+    color: #E4A14D;
 }
 
 #cta-button {
     width: 16rem;
     height: 3.4rem;
     font-size: 1.4em;
-    color: white;
-    background: black;
-    border-radius: 0;
+    color: black;
+    background: #E4A14D;
+    border-radius: 48px;
 }
 
 h1 {
     font-size: 3.8em !important;
-    color: rgba(0, 0, 0, 0.70) !important;
+    color: white !important;
 }
 
 h2 {
     font-size: 2.1em !important;
-    color: rgba(0, 0, 0, 0.70) !important;
+    color: white !important;
 }
+
 @media only screen and (max-width: 600px) {
     .header-overlay {
         top: 0;
@@ -59,6 +66,7 @@ h2 {
 }
 
 .menu {
+    color: white !important;
     position: fixed;
     top: 18px;
     right: 15px;
@@ -72,6 +80,12 @@ h2 {
 
 .image-rounded {
     border-radius: 50%;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left:0;
+    right:0;
+    margin: -92px auto;
 }
 
 .heading-top-padding {
@@ -142,16 +156,16 @@ h2 {
     }
 }
 
-.btn-black {
+.btn-gold {
     color: white;
-    background: black;
-    border-radius: 0 !important;
+    background: #E4A14D;
+    border-radius: 8px !important;
     height: 3.2rem;
     font-size: 1.2em;
 }
 
 .desktop-main-section {
-    background: #F8F8F8 !important;
+    background: #303030 !important;
 }
 
 .custom-form {
@@ -159,6 +173,10 @@ h2 {
 }
 
 @media (max-width: 992px) {
+
+    .hide-on-mobile {
+        display: none !important;
+    }
 
     .navbar-collapse.collapsing .navbar-nav {
         display: block;

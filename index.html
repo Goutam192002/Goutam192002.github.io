@@ -19,14 +19,17 @@
       analytics.page();
       }}();
     </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cmp.osano.com/Azyw1tRvAig9h33u9/3ff29a03-4673-453d-9c7d-556bbf175bdf/osano.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class="container-fluid" data-spy="scroll" data-target="#navbar" id="top">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar" style="background: #F8F8F8 !important;">
+<body class="container" data-spy="scroll" data-target="#navbar" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
         <a class="navbar-brand" href="#">
             <img src="assets/new-logo.png" height="48">
         </a>
@@ -58,34 +61,35 @@
     </nav>
     <div class="container main-content desktop-main-section" id="home">
         <div class="row justify-content-center align-items-center" style="min-height: calc(100vh - 60px)">
-            <div class="col-sm-6 align-items-center" style="height: 100vh; display: flex">
+            <div class="col-sm align-items-center" style="height: 100vh; display: flex">
                 <div class="d-flex flex-column about-item-section justify-content-around" id="home-sub-1" style="height: 250px;">
                     <h1>Hi! It's Goutam</h1>
                     <h2>I am a <span id="role-text"></span></h2>
                     <button class="btn" id="cta-button">Let's Talk</button>
                 </div>
             </div>
-            <div class="col-sm-4 align-items-center justify-content-center" style="height: 100vh; display: flex">
-                <img src="assets/goutam-pic-min.png" width="250" height="250" class="image-rounded mr-5" alt="goutam-image">
+            <div class="col-sm align-items-center justify-content-center hide-on-mobile" style="height: 100vh; display: flex">
+                <div style="position: relative;">
+                    <img src="assets/goutam-pic-min.png" class="image-rounded" width="184" alt="goutam-image">
+                    <lottie-player src="./assets/ripple.json"  background="transparent" speed="1" autoplay loop></lottie-player>
+                </div>
             </div>
         </div>
     </div>
     <div class="container main-content desktop-main-section" id="mission-section" style="min-height: 100vh">
-        <p class="stack-header heading-top-padding text-center mb-5">My Vision</p>
+        <p class="stack-header heading-top-padding text-center mb-5">Why Me?</p>
         <div class="row">
             <p class="col-sm-5">
-                <span class="quote"><i>"Form Follows Emotion" </i></span>
+                <span class="quote"><i>"Form Follows Function" </i></span>
                 <br>
                 <span class="author"><i>-Steve Jobs</i></span>
-                <br>
-                <span>Admist the burst of tech startups and companies. One thing we left behind was culture and values.
-                These people, Steve Jobs, Elon Musk, Kunal Shah, Ritesh Aggarwal have built a prophecy, about how to
-                build companies and deliver value to your cusotmers. The end goal of a business or not merely to increase revenue
-                and get funding, the end goal must be delivering value to the customer. Revenue and valuations are merely byproducts
-                of customer satisfaction and usefullness.
                 <br><br><br>
-                My vision is to work with companies and help build products that deliver massive value to people. Building products which
-                have positive impact on people's lives, which makes technology a boon to people.
+                <span>My experience as a developer, helps me design products which are engineering and user friendly.
+                    Also, my experience in working with several early-stage startups has helped me understand
+                    about Product, Market and consumer behavior.
+                <br><br><br>
+                    The approach of focusing on form as well as function, in my opinion is key to
+                    designing great products.
                 </span>
             </p>
             <div class="col-sm-7">
@@ -108,7 +112,7 @@
             <div class="form-group">
                 <textarea class="form-control" rows="5" placeholder="Write your message here" name="body" required></textarea>
             </div>
-            <button type="submit" class="pageclip-form__submit btn btn-black">
+            <button type="submit" class="pageclip-form__submit btn btn-gold">
                 <span>Send</span>
             </button>
         </form>
